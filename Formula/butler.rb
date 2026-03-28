@@ -5,21 +5,21 @@
 class Butler < Formula
   desc "Multi-chain EVM wallet CLI tool for Chiliz Chain"
   homepage "https://github.com/GrapeInTheTree/go-ethereum-butler"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/GrapeInTheTree/go-ethereum-butler/releases/download/v0.3.0/butler_Darwin_x86_64.tar.gz"
-      sha256 "2455c31b3ac4db5dc1303fa509f08afead99b7c95aa1d2a43890313a3b8d91f5"
+      url "https://github.com/GrapeInTheTree/go-ethereum-butler/releases/download/v0.4.0/butler_Darwin_x86_64.tar.gz"
+      sha256 "f78840649a17e25bcc8417ee848b1f3f0a098b76ad6bfe02a61f26681b120a2d"
 
       define_method(:install) do
         bin.install "butler"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/GrapeInTheTree/go-ethereum-butler/releases/download/v0.3.0/butler_Darwin_arm64.tar.gz"
-      sha256 "da76e47e9a8b167472a697628d9fde414e88dcae541ae308bfa55148f6d1f798"
+      url "https://github.com/GrapeInTheTree/go-ethereum-butler/releases/download/v0.4.0/butler_Darwin_arm64.tar.gz"
+      sha256 "b474bb02d8d3f8e4a274695601437e71dc74f7480aad87319da064d628b272de"
 
       define_method(:install) do
         bin.install "butler"
@@ -29,15 +29,15 @@ class Butler < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/GrapeInTheTree/go-ethereum-butler/releases/download/v0.3.0/butler_Linux_x86_64.tar.gz"
-      sha256 "36b10cb936432e10291f94add45707fc351eb08399dcdb7a7f20286051c018fd"
+      url "https://github.com/GrapeInTheTree/go-ethereum-butler/releases/download/v0.4.0/butler_Linux_x86_64.tar.gz"
+      sha256 "e79992efa9a1c907d3104d3994809330694dbe8bd9ce88e536ef93a7cae06c4e"
       define_method(:install) do
         bin.install "butler"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/GrapeInTheTree/go-ethereum-butler/releases/download/v0.3.0/butler_Linux_arm64.tar.gz"
-      sha256 "4ccca1b1524c8ae5c951c802c45f5fc9f7891c679806853dd0d801e5899a3260"
+      url "https://github.com/GrapeInTheTree/go-ethereum-butler/releases/download/v0.4.0/butler_Linux_arm64.tar.gz"
+      sha256 "9b00cf1b7977a905a4679c428493627ab35a7bd5fc46209f04e5315c7ace2506"
       define_method(:install) do
         bin.install "butler"
       end
